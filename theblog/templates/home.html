@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Posts</h1>
+
+{% for post in object_list %}
+	<div class="row">
+		<div class="col-lg-8">
+			<div class="card" >
+			  {% if post.header_image %}
+			  <img src="{{ post.header_image.url }}" class="card-img-top" alt="...">
+			  {% endif %}
+			  <div class="card-body">
+			    <h5 class="card-title"><a href="{% url 'article-details' post.pk %}" style="color:inherit;">{{ post.title }}</a></h5>
+			    <h6 class="card-subtitle mb-2 text-muted"><a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
+			- {{ post.author.first_name }} {{ post.author.last_name }} - {{ post.post_date}}</h6>
+			    <p class="card-text">{{ post.snippet }}</p>
+			    {% if user.is_authenticated and user.id == post.author.id %} 
+					<a href="{% url 'update_post' post.pk %}" class="btn btn-primary">Edit</a>
+					<a href="{% url 'delete_post' post.pk %}" class="btn btn-danger">Delete</a>
+				{% endif %}
+			  </div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+{% endfor %}
+
+
+
+{% endblock %}
+
+<!-- <li><a href="{% url 'article-details' post.pk %}">{{ post.title }}</a>
+	-  <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
+	- {{ post.author.first_name }} {{ post.author.last_name }} - {{ post.post_date}}
+	{% if user.is_authenticated and user.id == post.author.id %} 
+		<small><a href="{% url 'update_post' post.pk %}">(Edit)</a></small>
+		<small><a href="{% url 'delete_post' post.pk %}">(Delete)</a></small>
+	{% endif %}
+	<br>
+	{{ post.snippet }}
+	</li> -->
