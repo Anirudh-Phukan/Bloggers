@@ -3,13 +3,12 @@
 A Blogging website created using Django.
 
 ## Features
-* Used Firebase authentication to register and sign in users with their Google account.
-* Timeline Page to view the posts of all the people you have followed including yourself.
-* Activity Feed Page to receive alerts about people following you, comments about your posts and people who liked your posts.
-* Ability to upload images directly from camera or gallery and create a post with a caption and location. Device's current location can also be used with the help of the GeoLocator package.
-* Search for other registered users.
-* Profile Page to display a user's personal information and posts.
-* Ability to like and comment on posts.
+* Used Django's authentication system to register and sign in users.
+* The Home page lists all the blog posts, showing the most recent ones on top.
+* The Categories drop down menu takes users to blogs belonging to a particular category.
+* Users can comment on and like other users' posts.
+* Ability to edit one's profile page.
+* Images and rich text can also be added to a blog post.
 
 ## Screenshots
 
