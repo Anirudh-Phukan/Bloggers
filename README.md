@@ -15,23 +15,27 @@ A Blogging website created using Django.
 
 <table>
   <tr>
-    <td>Login Page</td>
-     <td>Timeline Page</td>
-     <td>Activity Feed Page</td>
+    <td>Home Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%201.jpeg" width="300"></td>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%202.jpeg" width="300"></td>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%203.jpeg" width="300"></td>
+    <td><img src="https://github.com/Anirudh-Phukan/Bloggers/blob/main/static/theblog/images/Preview%201.png" width="1000"></td>
   </tr>
   <tr>
-    <td>Upload Page</td>
-     <td>Search Page</td>
-     <td>Profile Page</td>
+    <td>Article Header</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%204.jpeg" width="300"></td>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%205.jpeg" width="300"></td>
-    <td><img src="https://github.com/Anirudh-Phukan/Social-Us/blob/main/assets/images/Preview%206.jpeg" width="300"></td>
+    <td><img src="https://github.com/Anirudh-Phukan/Bloggers/blob/main/static/theblog/images/Preview%202.png" width="1000"></td>
+  </tr>
+  <tr>
+    <td>Article Body</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Anirudh-Phukan/Bloggers/blob/main/static/theblog/images/Preview%203.png" width="1000"></td>
+  </tr>
+  <tr>
+    <td>Article Footer</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Anirudh-Phukan/Bloggers/blob/main/static/theblog/images/Preview%204.png" width="1000"></td>
   </tr>
  </table>
