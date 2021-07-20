@@ -1,4 +1,4 @@
-# Social-Us
+# Bloggers
 
 A Blogging website created using Django.
 
